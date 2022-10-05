@@ -17,5 +17,54 @@ Gas: A unit of ccomputational measurement. Thee more complex your transaction is
     gass you have to pay.
 HOW THE BLOCK CHAIN WORKS
 SHA256 hash.
+ethererum: uses the keccak256 hash algorithm
+HASH ALGORITHM: A function that computess data into a unique hash.
 Hash: A unique fixeed length string, meant to identify a piece of data, 
     they aree created by placcing said dtat into a "hash function"
+Genesis Blok: the first block in a blockhain
+Mining: The proeess of finding the solution to the blockchain "problem"
+In our example, the prooblem was to find a hash that starts with four zeros.
+Nodes get paid for minning blocks.
+Nonce: A "number" used one to find the "solution" to the blockchain prooblem.
+It's also used to define the transcation number for an acccount/address.
+private key: only known to the key holdeer, it's used to "sign" transations
+public key: is derived from your private key. Anyone can "see" it and use it to 
+    verify that a transaction came fro you.
+    Node: a single instane in a deecentralized network.
+
+blockchain consensus mechanism
+1. chain selection:
+2. sybil resistance PoW (proof of work)
+    PoS (proof of stake)
+    chain seelection rule:  Nakamoto consensus: combination of PoW and longest chain. the longest chain.
+    block confirmations number of chains ahead of it in the chain.
+
+ETH 2.0 prove of stake.
+
+block reward and transaction  fees: prices won by the Node.
+
+types of blockchain attacks.
+===========================
+1. sybil Attack: the attacker hass to hass to create a lots of account and node in other
+    to take over the network is is economically imposssible because it has to over
+    still do the work or have a stake to make this happen.
+2. 51% Attack: if you have the longest chain and it matches up with more 51% of the network
+    then the chain can be forked to your chain.
+
+Proof of work cost a lot of eelectricity.
+PoS: chains already using pow eg. avalache, polygon, phantom etc.
+    proof of stake nodes put up collateral as a sybil resistance mechanism.
+validators: (miners are noow called validators)
+Randomness: 
+Pros of PoW: great mecchanism against Sybil attack.
+            easy to proof who the author of a new block is.
+            less complicated i.e uses much less energy.
+            Scalability: gas price may keep rising has more ppl join the use of blockchain
+            sharding: main chain that coordinate a lot  of other micro chain.
+
+Layer 1: Base layer blockchain implementation. e.g bitcoin, ethereeum, avalanche. 
+Layer 2: Any application built on top of layer 1. eg. chainlink, abitrum, optimism (rollup) ssolve some of the 
+    leyer problems.
+
+
+
