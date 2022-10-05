@@ -1,0 +1,21 @@
+#lesson 1
+bitcoin 
+ethereum
+Decentralized agreement
+Decentralized Transaction
+Decentralized Organisations (DAO: Decentralized Autonomous Organisations)
+    smart contracts is a set of instructions executed in a decentralised wway without 
+    the need for a centrailzed or third party intermedialry
+
+Decentralized Oracle Network (DON)
+web3: permissionless, decentralized, dynamic data.
+        -immutable -decentralized -transparent.
+
+Lesson 2.
+wallet essentials: public key, private key, seed phase. 
+Gas: A unit of ccomputational measurement. Thee more complex your transaction is the more
+    gass you have to pay.
+HOW THE BLOCK CHAIN WORKS
+SHA256 hash.
+Hash: A unique fixeed length string, meant to identify a piece of data, 
+    they aree created by placcing said dtat into a "hash function"
