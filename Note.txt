@@ -67,4 +67,42 @@ Layer 2: Any application built on top of layer 1. eg. chainlink, abitrum, optimi
     leyer problems.
 
 
+SOLIDITY
+NOTE: all solidity expressions or line of code ends with a semi colon (;).
+1. licence definition
+//SPDX-License-Identifier: MIT
+2. then solidity definition
+pragma solidity 0.8.8; // solidity version
+verionns ^0.8.8 (will be compatible with version equal or greater than 0.8.8, => ) 
+3. defining our contract function. 
+    Contract contactName {
+        // other part f the contract code are within the coily braces
+    }
+4. Basic solidity types.
+    a. boolean 
+    b. uint: unit are of different types: uint8 (least)- uint256 (max)
+    c. int (interger, a non negative number)
+    d. address (wallet address, contract address ...)
+    e. bytes (bytes32 - ...)
+    f. string
+    Contract contactName {
+        // other part f the contract code are within the coily braces
+        uint256 favNumber = 5;
+        string favText = "Five";
+        int256 favInt = 5;
+        address myAddress = 0x10...;
+        bytes32 favBytes = "cat"; 
+    }
+function visiblity specifier(4)
+1. public
+2. private
+3. external
+4. internal
 
+Scope
+1. global
+
+view and pure funtions when used alone does not spend gas.
+view and pure functions disallow any modification of state.
+pure functions additionally disallow you from to read from blockchain state.
+if a gas costing function calls a view or pure function - only then will it cost gas
