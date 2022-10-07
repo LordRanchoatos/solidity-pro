@@ -106,3 +106,37 @@ view and pure funtions when used alone does not spend gas.
 view and pure functions disallow any modification of state.
 pure functions additionally disallow you from to read from blockchain state.
 if a gas costing function calls a view or pure function - only then will it cost gas
+
+BASIC SOLIDITY ARRAY AND STRUCT
+STRUCT is creating a new type of structure that we want inform of 
+    struct People{
+        uint256 favNumber;
+        string name;
+    }
+
+ARRAY: an array is a data structure that holds a list of other types.
+dynamic array vs fixed sized array.
+dynamic array [] is the array whose size is not specify while fixed size array [3] 
+(can only take a maximum of 3) is otherwise.
+
+BASIC SOLIDITY ERRORS AND WARNINGS
+Warnings wont stop your code from compiling (color in yellow), errors means your code didn't compile at i.e 
+not working has expected and you should fixed the error (color in red) 
+
+BASIC SOLIDITY, MEMORY, STORAGE, AND CALLDATA.
+places you can store  data in solidity.
+EVM overview.
+1. stack
+2. Memory
+3. Storage 
+4. Calldata
+5. code
+6. logs
+
+calldata and memory means that this data is only temporary and will only exist during the transaction
+in whih the function is called. 
+storage variable persist even after the transaction is complete.
+calldata is a temporary stored variable that can not be modified. 
+memory is a temporary stored variable that can be modified. 
+
+MAPPING: is a data structure in where a key is mapped to a single variable.
