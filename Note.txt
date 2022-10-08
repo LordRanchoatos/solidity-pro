@@ -140,3 +140,21 @@ calldata is a temporary stored variable that can not be modified.
 memory is a temporary stored variable that can be modified. 
 
 MAPPING: is a data structure in where a key is mapped to a single variable.
+
+EVM: Ethereum Virtue Machine.
+avalache, polygon, Fantom
+
+lesson3
+the ability of smart contract to interact wwwith eachother is called composability.
+smart contracts a composable
+you can import smart contract through the file system.
+## import "./filename.sol" 
+
+interaccting with other smart contracts
+to interact with annother contract we need the Address and the ABI (application Binary Interface)
+
+Contracts can inherit contracts (thereby innheeriting all the functions of the parent contract), 
+all you need do is to import the parent funtion and the child contract deleared as the parent contract.
+
+functions inn the parent contract can be override in the child contract: to do this you have to;
+define the parent function as virtual and child contract as override.
