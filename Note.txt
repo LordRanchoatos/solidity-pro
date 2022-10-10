@@ -158,3 +158,21 @@ all you need do is to import the parent funtion and the child contract deleared 
 
 functions inn the parent contract can be override in the child contract: to do this you have to;
 define the parent function as virtual and child contract as override.
+
+fund me project.
+every transaction on ethereum have the following fields.
+=================================
+transaction - value Transfer.
+=================================
+1. Nounce: txx for the account.
+2. Gas Price: price per unit gas (wei)
+3. Gas Limit: 21000
+4. To: address that the tx is sennt to.
+5. value: amount in wei to spend
+6. Data: empty
+7 v, r, s : compoent of tx signature.
+
+=================================
+transaction - funcction call.
+=================================
+NB: Smart contacts can hold fundss just like how wallet can.
