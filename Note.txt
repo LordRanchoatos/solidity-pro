@@ -198,3 +198,7 @@ modifier onlyOwner {
         require(msg.sender == owner, "sender is not owner");
         _;
     }
+
+Advanced solidity immutable annd constant.
+make the gas more gas efficient.
+constant keyword and immutable keyword
