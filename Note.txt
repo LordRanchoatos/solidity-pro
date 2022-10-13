@@ -199,6 +199,12 @@ modifier onlyOwner {
         _;
     }
 
-Advanced solidity immutable annd constant.
+Advanced solidity: immutable annd constant.
 make the gas more gas efficient.
 constant keyword and immutable keyword
+
+
+Advance solidity: custom errors
+* revert: this can be used in place of require to be more gas efficient.
+e.g error NotOwner()
+if (msg.sender == i_owner) {revert NotOwner();}

@@ -17,33 +17,42 @@ contract FundMe {
 
     address public immutable i_owner;
 
-    constructor(){
+    constructor() {
         i_owner = msg.sender;
     }
 
     function fund() public payable {
-        require(msg.value.getConversionRate() >= MINIMUM_USD, "Didn't send enough!"); // 1e18 == 1* 10 ** 18 === 1000000000000000000
+        require(
+            msg.value.getConversionRate() >= MINIMUM_USD,
+            "Didn't send enough!"
+        ); // 1e18 == 1* 10 ** 18 === 1000000000000000000
         funders.push(msg.sender);
         addressToAmountFunded[msg.sender] += msg.value;
-    } 
+    }
 
     function withDraw() public onlyOwner {
-        for (uint256 funderIndex = 0; funderIndex < funders.length; funderIndex++ ){
+        for (
+            uint256 funderIndex = 0;
+            funderIndex < funders.length;
+            funderIndex++
+        ) {
             address funder = funders[funderIndex];
             addressToAmountFunded[funder] = 0;
         }
-        
-        // 3. call
-        (bool callSuccess, ) = payable(msg.sender).call{value: address(this).balance}("");
-        require(callSuccess, "Call failed");
 
+        // 3. call
+        (bool callSuccess, ) = payable(msg.sender).call{
+            value: address(this).balance
+        }("");
+        require(callSuccess, "Call failed");
     }
 
-    modifier onlyOwner {
-        require(msg.sender == i_owner, "sender is not owner");
+    modifier onlyOwner() {
+        // require(msg.sender == i_owner, "sender is not owner");
+        if (msg.sender == i_owner) {
+            revert NotOwner();
+        }
+
         _;
     }
-
-    
-
 }
