@@ -208,3 +208,7 @@ Advance solidity: custom errors
 * revert: this can be used in place of require to be more gas efficient.
 e.g error NotOwner()
 if (msg.sender == i_owner) {revert NotOwner();}
+
+Advance solidity: receieve and fallback 
+
+
