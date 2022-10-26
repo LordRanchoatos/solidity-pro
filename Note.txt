@@ -211,6 +211,12 @@ if (msg.sender == i_owner) {revert NotOwner();}
 
 Advance solidity: receieve and fallback 
 
+how to find solution to bugs.
+//limit tinkering / triggering 20 minutes.
+// take at least 15 minutes yourself => or be 100% sure.
+// you exhusted all options.
 
-added space
-more space 
+// 1. Tinker and try to pinpoint exactly what's going on
+// 2. Google the exact error
+// 3. Go to our Gitbub repo discussion and/or updates
+// 4. Ask a question on a forum like slack exchange ETH and stack overflow.
