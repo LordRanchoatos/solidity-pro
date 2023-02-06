@@ -145,7 +145,7 @@ EVM: Ethereum Virtue Machine.
 avalache, polygon, Fantom
 
 lesson3
-the ability of smart contract to interact wwwith eachother is called composability.
+the ability of smart contract to interact with eachother is called composability.
 smart contracts a composable
 you can import smart contract through the file system.
 ## import "./filename.sol" 
